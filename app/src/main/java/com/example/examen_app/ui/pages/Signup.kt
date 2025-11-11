@@ -92,7 +92,7 @@ fun SignupScreen(onNavigateBack: () -> Unit) {
         val isConfirmPasswordValid = validateConfirmPassword(confirmPassword, password)
 
         if (isNameValid && isEmailValid && isPasswordValid && isConfirmPasswordValid) {
-            // Aquí iría la lógica de registro
+           
             nameError = ""
             emailError = ""
             passwordError = ""
@@ -174,9 +174,9 @@ fun SignupScreen(onNavigateBack: () -> Unit) {
                     )
                 }
             }
-            // <-- TERMINA CAMBIO AQUÍ
+           
         )
-        // <-- TEXT DE ERROR EXTERNO ELIMINADO
+        
 
         Spacer(modifier = Modifier.height(16.dp))
 
@@ -210,9 +210,9 @@ fun SignupScreen(onNavigateBack: () -> Unit) {
                     )
                 }
             }
-            // <-- TERMINA CAMBIO AQUÍ
+            
         )
-        // <-- TEXT DE ERROR EXTERNO ELIMINADO
+       
 
         Spacer(modifier = Modifier.height(16.dp))
 
@@ -247,9 +247,9 @@ fun SignupScreen(onNavigateBack: () -> Unit) {
                     )
                 }
             }
-            // <-- TERMINA CAMBIO AQUÍ
+         
         )
-        // <-- TEXT DE ERROR EXTERNO ELIMINADO
+        
 
         Spacer(modifier = Modifier.height(16.dp))
 
@@ -280,7 +280,7 @@ fun SignupScreen(onNavigateBack: () -> Unit) {
                 errorBorderColor = MaterialTheme.colorScheme.error,
                 errorSupportingTextColor = MaterialTheme.colorScheme.error
             ),
-            // <-- INICIA CAMBIO AQUÍ
+       
             supportingText = {
                 if (confirmPasswordError.isNotEmpty()) {
                     Text(
@@ -292,9 +292,9 @@ fun SignupScreen(onNavigateBack: () -> Unit) {
                     )
                 }
             }
-            // <-- TERMINA CAMBIO AQUÍ
+        
         )
-        // <-- TEXT DE ERROR EXTERNO ELIMINADO
+      
 
         Spacer(modifier = Modifier.height(24.dp))
 
@@ -348,7 +348,6 @@ fun SignupScreen(onNavigateBack: () -> Unit) {
             Icon(
                 painter = painterResource(id = R.drawable.face),
                 contentDescription = "Facebook",
-                // tint = Color(0xFF1877F2), // -> Lo comento, R.drawable.face parece ser tu propio ícono, así que el tint puede no ser necesario o deseado
                 modifier = Modifier.size(24.dp)
             )
             Spacer(modifier = Modifier.width(8.dp))
