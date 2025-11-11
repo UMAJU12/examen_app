@@ -62,7 +62,7 @@ fun LoginScreen(onNavigateToSignup: () -> Unit) {
         val isPasswordValid = validatePassword(password)
 
         if (isEmailValid && isPasswordValid) {
-            // Aquí iría la lógica de autenticación
+            
             emailError = ""
             passwordError = ""
         }
@@ -110,25 +110,25 @@ fun LoginScreen(onNavigateToSignup: () -> Unit) {
                 focusedBorderColor = MaterialTheme.colorScheme.primary,
                 unfocusedBorderColor = Color.Gray,
                 errorBorderColor = MaterialTheme.colorScheme.error,
-                // Opcional: Colorea el texto de error dentro del campo
+                
                 errorSupportingTextColor = MaterialTheme.colorScheme.error
             ),
-            // <-- INICIA CAMBIO AQUÍ
+           
             supportingText = {
                 if (emailError.isNotEmpty()) {
                     Text(
                         text = emailError,
-                        color = MaterialTheme.colorScheme.error, // Puedes omitir esto si usas 'errorSupportingTextColor' arriba
+                        color = MaterialTheme.colorScheme.error, 
                         fontSize = 12.sp,
                         modifier = Modifier.fillMaxWidth(),
-                        textAlign = TextAlign.End // Alinea el texto a la derecha
+                        textAlign = TextAlign.End 
                     )
                 }
             }
-            // <-- TERMINA CAMBIO AQUÍ
+           
         )
 
-        // <-- HEMOS ELIMINADO EL TEXT DE ERROR QUE ESTABA AQUÍ AFUERA
+      
 
         Spacer(modifier = Modifier.height(16.dp))
 
@@ -157,10 +157,10 @@ fun LoginScreen(onNavigateToSignup: () -> Unit) {
                 focusedBorderColor = MaterialTheme.colorScheme.primary,
                 unfocusedBorderColor = Color.Gray,
                 errorBorderColor = MaterialTheme.colorScheme.error,
-                // Opcional: Colorea el texto de error dentro del campo
+                
                 errorSupportingTextColor = MaterialTheme.colorScheme.error
             ),
-            // <-- INICIA CAMBIO AQUÍ
+            
             supportingText = {
                 if (passwordError.isNotEmpty()) {
                     Text(
@@ -168,14 +168,14 @@ fun LoginScreen(onNavigateToSignup: () -> Unit) {
                         color = MaterialTheme.colorScheme.error,
                         fontSize = 12.sp,
                         modifier = Modifier.fillMaxWidth(),
-                        textAlign = TextAlign.End // Alinea el texto a la derecha
+                        textAlign = TextAlign.End 
                     )
                 }
             }
-            // <-- TERMINA CAMBIO AQUÍ
+            
         )
 
-        // <-- HEMOS ELIMINADO EL TEXT DE ERROR QUE ESTABA AQUÍ AFUERA
+       
 
         Spacer(modifier = Modifier.height(8.dp))
 
