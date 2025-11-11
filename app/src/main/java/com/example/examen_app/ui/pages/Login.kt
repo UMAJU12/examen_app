@@ -15,7 +15,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.VisualTransformation
-import androidx.compose.ui.text.style.TextAlign // <-- AÑADE ESTA IMPORTACIÓN
+import androidx.compose.ui.text.style.TextAlign 
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.examen_app.R
